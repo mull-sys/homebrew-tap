@@ -5,21 +5,21 @@
 class Liste < Formula
   desc "Portable CLI roadmap tracker for humans and AI agents"
   homepage "https://github.com/pufferhaus/liste"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pufferhaus/liste/releases/download/v1.0.0/liste_1.0.0_darwin_amd64.tar.gz"
-      sha256 "586923b96619b32a1420aa17ecef933bba28f6d13683effb247ae43accd34fed"
+      url "https://github.com/pufferhaus/liste/releases/download/v1.1.0/liste_1.1.0_darwin_amd64.tar.gz"
+      sha256 "dcc1ea8843bc57bd8e939bf94e0e95747eaae93326ed1cfcc142b600300b2ec5"
 
       define_method(:install) do
         bin.install "liste"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pufferhaus/liste/releases/download/v1.0.0/liste_1.0.0_darwin_arm64.tar.gz"
-      sha256 "49cb6ef64fba9129968b5e12d250789479ddde0ba8b0375f57ab3191432fe430"
+      url "https://github.com/pufferhaus/liste/releases/download/v1.1.0/liste_1.1.0_darwin_arm64.tar.gz"
+      sha256 "6e32104458f3fd9a8f9d8f5a206cf93e61dba12e98e2703c77320f3a2b2c63e1"
 
       define_method(:install) do
         bin.install "liste"
@@ -29,15 +29,15 @@ class Liste < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pufferhaus/liste/releases/download/v1.0.0/liste_1.0.0_linux_amd64.tar.gz"
-      sha256 "b890908f138c59d7811a8f35aa1b30cc63d6027b974c38495fdc8c9a85c2248d"
+      url "https://github.com/pufferhaus/liste/releases/download/v1.1.0/liste_1.1.0_linux_amd64.tar.gz"
+      sha256 "b0afee266d9cde63bff8c1b8ea3843a25e01628881c971ccd85470d63cd9982d"
       define_method(:install) do
         bin.install "liste"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pufferhaus/liste/releases/download/v1.0.0/liste_1.0.0_linux_arm64.tar.gz"
-      sha256 "23a9140d4ef88071c498e0e21d7cf69d2b627f1dacccfc70d73266c483d33e74"
+      url "https://github.com/pufferhaus/liste/releases/download/v1.1.0/liste_1.1.0_linux_arm64.tar.gz"
+      sha256 "eb386f3a20f56af08a2934bfad878d7dcdf5b486d83a4e291111db28abc74cfb"
       define_method(:install) do
         bin.install "liste"
       end
